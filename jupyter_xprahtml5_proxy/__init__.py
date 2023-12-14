@@ -36,10 +36,10 @@ def _xprahtml5_urlparams():
     from getpass import getuser
 
     url_params = '?' + '&'.join([
-        'username=' + getuser(),
-        'password=' + _xprahtml5_passwd,
-        'encryption=AES',
-        'key=' + _xprahtml5_aeskey,
+        # JW 'username=' + getuser(),
+        # JW 'password=' + _xprahtml5_passwd,
+        # JW 'encryption=AES',
+        # JW 'key=' + _xprahtml5_aeskey,
         'sharing=true',
     ])
 
