@@ -132,6 +132,8 @@ def setup_xprahtml5():
         '--sharing',  # this allows to open the desktop in multiple browsers at the same time
         '--no-daemon',  # mandatory
     ]
+    if "DISPLAY" in os.environ:
+        cmd.append(os.environ["DISPLAY"])
     logger.info('Xpra command: ' + ' '.join(cmd))
 
     return {
