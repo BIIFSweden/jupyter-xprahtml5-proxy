@@ -114,11 +114,11 @@ def setup_xprahtml5():
         # '--socket-dir="' + socket_path + '/"',  # fixme: socket_dir not recognized
         # '--server-idle-timeout=86400',  # stop server after 24h with no client connection
         # '--exit-with-client=yes',  # stop Xpra when the browser disconnects
-        '--start=xterm -fa "DejaVu Sans Mono" -fs 14',
+        # JW '--start=xterm -fa "DejaVu Sans Mono" -fs 14',
         # '--start-child=xterm', '--exit-with-children',
-        '--tcp-auth=file:filename=' + fpath_passwd,
-        '--tcp-encryption=AES',
-        '--tcp-encryption-keyfile=' + fpath_aeskey,
+        # JW '--tcp-auth=file:filename=' + fpath_passwd,
+        # JW '--tcp-encryption=AES',
+        # JW '--tcp-encryption-keyfile=' + fpath_aeskey,
         '--clipboard-direction=both',
         '--no-keyboard-sync',  # prevent keys from repeating unexpectedly on high latency
         '--no-mdns',  # do not advertise the xpra session on the local network
